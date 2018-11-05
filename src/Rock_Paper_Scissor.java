@@ -7,12 +7,12 @@ public class Rock_Paper_Scissor {
 
     public static void main(String[] args) {
         int input;
-        int b=1;
+        int b = 1;
         Scanner sage = new Scanner(System.in);
         Random rnd = new Random();
         System.out.println(" Rock,Paper, or Scissors");
         System.out.println("Choose between 1,2,3 these stand for Rock,Paper,and Scissor");
-
+        while (b != 0) {
             int rock = 1, Paper = 2, Scissor = 3;
             input = sage.nextInt();
             int randomnumber = rnd.nextInt(3 - 1 + 1) + 1;
@@ -50,14 +50,14 @@ public class Rock_Paper_Scissor {
                             System.out.println("Scissors vs Paper");
                             System.out.println("you Lose!");
 
-                            }
+                        }
 
                     }
                 }
             }
         }
     }
-
+}
 
 
 
